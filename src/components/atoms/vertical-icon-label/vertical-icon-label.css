@@ -1,0 +1,22 @@
+.verticalIconLabel {
+	color: rgba(256, 256, 256, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font: var(--regular-font);
+	padding: 0 1rem;
+	align-self: center;
+}
+
+.verticalIconLabel i, .verticalIconLabel span {
+	align-self: center;
+}
+
+.verticalIconLabel i {
+	height: 1.25rem;
+	padding-top: 2px;
+}
+
+.verticalIconLabel span {
+	font-size: 0.75rem;
+}

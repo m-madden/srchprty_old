@@ -1,0 +1,58 @@
+.cta-image-container {
+	height: calc(50vh - 3rem);
+	width: 100vw;
+}
+
+.cta-content {
+	height: 50vh;
+	width: 100vw;
+	background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 40%, var(--primary-light) 100%);
+	display: flex;
+	flex-direction: column;
+}
+
+.cta-text {
+	color: white;
+	align-self: center;
+	font: var(--display-font);
+	text-align: center;
+	padding: 1rem;
+	max-width: 200px;
+}
+
+button.cta {
+	align-self: center;
+	margin-bottom: 2rem;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.cta.howitworksLink {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100px;
+	justify-content: flex-start;
+}
+
+.cta.howitworks {
+	text-align: center;
+	color: white;
+	font: var(--regular-font);
+	cursor: pointer;
+}
+
+@keyframes bounce {
+	0% {
+		margin-top: 0;
+	}
+	100% {
+		margin-top: 10px;
+	}
+}
+
+.cta.bounce-arrow {
+	color: rgba(256, 256, 256, 0.9);
+	text-align: center;
+	animation: 0.4s infinite alternate bounce;
+	margin-top: 0px;
+}
