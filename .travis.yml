@@ -1,3 +1,9 @@
 language: node_js
 node_js:
  - "node"
+env:
+  global:
+    - 'SFTP_USER=[user]'
+    - 'SFTP_PASSWORD=[password]'
+after_success:
+- curl sftp://${SFTP_USER}:${SFTP_PASSWORD}@srchprty.com
